@@ -141,6 +141,17 @@ Godot --headless --fixed-fps 60 --path . --script res://Tools/e2e_campaign.gd --
 Godot --path . --resolution 2560x1080 --script res://Tools/adapt_test.gd -- outdir tag
 ```
 
+## Team Contributors
+
+| Contributor | Role |
+|-------------|------|
+| **Myroslav** ([@m72207623-maker](https://github.com/m72207623-maker)) | Repository owner; development and integration of the 3D version, publishing |
+| **Danylo Seredniak** | Music composer and producer (both soundtrack tracks) |
+| **[@StrakFel](https://github.com/StrakFel)** | Original project setup and the first main-menu design (kept in the Git history of this repository) |
+
+The game concept, the story and the design of the missions come from the whole ZENITH team.
+Contributors are credited in the Git history through `Co-authored-by` trailers on the commits that contain their real work.
+
 ## AI Usage
 
 **Claude AI (Anthropic)** was used as a development assistant for this project: writing GDScript code, building Godot scenes, debugging and automated testing.
