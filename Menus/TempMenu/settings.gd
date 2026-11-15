@@ -94,6 +94,12 @@ func _ready() -> void:
 	v.add_child(_toggle("SET_SHAKE", "shake"))
 	v.add_child(_toggle("SET_UNLOCK_ALL", "unlock_all"))
 
+	v.add_child(UIKit.label("CREDITS_TITLE", 20, UIKit.C_ACCENT))
+	var credits := UIKit.label("CREDITS_MUSIC", 15, UIKit.C_MUTED)
+	credits.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	credits.custom_minimum_size.x = 380
+	v.add_child(credits)
+
 	_reset_btn = UIKit.button("SET_RESET", Vector2(0, 46))
 	_reset_btn.pressed.connect(_on_reset)
 	v.add_child(_reset_btn)

@@ -137,6 +137,8 @@ Godot --headless --fixed-fps 60 --path . --script res://Tools/play_full.gd --qui
 
 ## Credits and licences
 
+**Music composed and produced by Danylo Seredniak.** The two soundtrack tracks (`Assets/Audio/music_calm.mp3`, `music_action.mp3`) are original works created by a member of the ZENITH team.
+
 Game code and generated assets: ZENITH team. Engine: [Godot Engine](https://godotengine.org/license/) (MIT).
 Models built with [Blender](https://www.blender.org/). NASA is credited as an inspiration and reference only;
 ZENITH is not affiliated with or endorsed by NASA.
