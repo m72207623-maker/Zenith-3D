@@ -103,16 +103,16 @@ func _drag(orbit: OrbitCameraController, btn: MouseButton, total: Vector2, pos: 
 	await process_frame
 
 
-func _test_camera(tag: String, orbit: OrbitCameraController, camera: Camera3D, pos: Vector2 = Vector2(640, 360)) -> void:
+func _test_camera(tag: String, orbit: OrbitCameraController, camera: Camera3D, pos: Vector2 = Vector2(640, 360), dx: float = 260.0) -> void:
 	var blk := await _blocker(pos)
 	_check(blk == "", tag + ": free 3D area is not covered by UI (hovered: %s)" % (blk if blk != "" else "nothing"))
 	var yaw0 := orbit.yaw
 	var cam0 := camera.global_position
-	await _drag(orbit, MOUSE_BUTTON_LEFT, Vector2(260, 40), pos)
+	await _drag(orbit, MOUSE_BUTTON_LEFT, Vector2(dx, 40), pos)
 	await _frames(8)
 	_check(orbit.engaged, tag + ": real LMB drag engages the camera")
 	_check(camera.global_position.distance_to(cam0) > 1.0, tag + ": camera actually moved (%.1f m)" % camera.global_position.distance_to(cam0))
-	_check(absf(angle_difference(orbit.yaw, yaw0)) > 0.4, tag + ": 260 px drag rotated it %.0f deg" % rad_to_deg(absf(angle_difference(orbit.yaw, yaw0))))
+	_check(absf(angle_difference(orbit.yaw, yaw0)) > dx * 0.0055 * 0.5, tag + ": drag rotated it %.0f deg" % rad_to_deg(absf(angle_difference(orbit.yaw, yaw0))))
 	var d0 := orbit._dist_t
 	_mouse_btn(MOUSE_BUTTON_WHEEL_UP, true, pos)
 	_mouse_btn(MOUSE_BUTTON_WHEEL_UP, false, pos)
@@ -149,10 +149,10 @@ func _run() -> void:
 	m = await _open("res://Missions/Mission1/mission1.tscn", "mission1")
 	m.dev_skip_briefing()
 	await _frames(30)
-	await _test_camera("M1 satellite design", m.pad_scene.orbit, m.pad_scene.camera, Vector2(640, 360))
+	await _test_camera("M1 satellite design", m.pad_scene.orbit, m.pad_scene.camera, Vector2(560, 360), 150.0)
 	m._on_design_done(m.design_view.design.duplicate())
 	await _frames(30)
-	await _test_camera("M1 rocket designer", m.pad_scene.orbit, m.pad_scene.camera, Vector2(640, 360))
+	await _test_camera("M1 rocket designer", m.pad_scene.orbit, m.pad_scene.camera, Vector2(560, 360), 150.0)
 
 	print("\nRESULT: ", "ALL PASSED" if _fail == 0 else "%d FAILED" % _fail)
 	quit(_fail)

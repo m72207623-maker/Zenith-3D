@@ -77,6 +77,7 @@ func _drag(orbit: OrbitCameraController, btn: MouseButton, rel_total: Vector2) -
 
 
 func _run() -> void:
+	root.size = Vector2i(1280, 720)           # the screen-space checks below assume a 1280x720 window (headless default is tiny)
 	await _frames(5)
 	var gs := root.get_node("GameState")
 	var router := root.get_node("Router")

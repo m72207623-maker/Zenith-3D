@@ -133,6 +133,12 @@ Godot --headless --path . --script res://Tools/check_strings.gd
 Godot --headless --fixed-fps 60 --path . --script res://Tools/ux_test.gd --quit-after 400000
 # full 5-mission playthrough with real input events
 Godot --headless --fixed-fps 60 --path . --script res://Tools/play_full.gd --quit-after 900000
+# audio (music moods, crossfade, loop, volumes), Mission 5 story flow, per-mission autopilot campaign
+Godot --headless --fixed-fps 60 --path . --script res://Tools/audio_test.gd --quit-after 6000
+Godot --headless --fixed-fps 60 --path . --script res://Tools/m5_flow_test.gd --quit-after 600000 -- m heavy 8
+Godot --headless --fixed-fps 60 --path . --script res://Tools/e2e_campaign.gd --quit-after 3000000 -- m2,m3,m4,m5 10
+# adaptive layout on a real renderer at the current window size
+Godot --path . --resolution 2560x1080 --script res://Tools/adapt_test.gd -- outdir tag
 ```
 
 ## Credits and licences
