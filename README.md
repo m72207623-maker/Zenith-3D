@@ -141,6 +141,11 @@ Godot --headless --fixed-fps 60 --path . --script res://Tools/e2e_campaign.gd --
 Godot --path . --resolution 2560x1080 --script res://Tools/adapt_test.gd -- outdir tag
 ```
 
+## AI Usage
+
+**Claude AI (Anthropic)** was used as a development assistant for this project: writing GDScript code, building Godot scenes, debugging and automated testing.
+The concept of the game, the story, the design of the missions and the direction of the development belong to the ZENITH team.
+
 ## Credits and licences
 
 **Music composed and produced by Danylo Seredniak.** The two soundtrack tracks (`Assets/Audio/music_calm.mp3`, `music_action.mp3`) are original works created by a member of the ZENITH team.
