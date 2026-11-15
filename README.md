@@ -48,6 +48,19 @@ A **Demo Mode** (Settings) unlocks every mission and adds a demonstration rocket
 - English / Ukrainian, switchable at runtime in Settings.
 - In-game **NASA Resources** screen (main menu) with the NASA material that inspired the game.
 
+## Screenshots
+
+Real gameplay captured in the game (1080p).
+
+| | |
+|:-:|:-:|
+| ![Main menu](Screenshots/01-main-menu.jpg) | ![Rocket designer](Screenshots/02-rocket-designer.jpg) |
+| **Main menu** - the 3D launch site | **Rocket designer** - parts, live stats, budget and validation |
+| ![Launch with autopilot](Screenshots/03-launch-autopilot.jpg) | ![Lunar orbit insertion](Screenshots/04-lunar-orbit-insertion.jpg) |
+| **Launch** - the autopilot flies the gravity turn | **Space operations** - lunar orbit insertion burn (Mission 5) |
+| ![Crew transfer](Screenshots/05-crew-transfer.jpg) | ![Moon surface](Screenshots/06-moon-surface.jpg) |
+| **Docking and crew transfer** - astronauts and samples move to the command ship | **The Moon** - astronaut and rover collect samples |
+
 ## Controls
 
 | Key | Action |
