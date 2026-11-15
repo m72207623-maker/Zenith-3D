@@ -1,3 +1,17 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Local tools / secrets / OS files (never commit)
+export_presets.cfg
+export_credentials.cfg
+*.log
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+/builds/
+
+# Third-party editor plugin used only on the developer machine (licence not included): keep it local
+/addons/funplay_mcp/
