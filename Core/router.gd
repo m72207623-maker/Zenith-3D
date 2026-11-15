@@ -2,7 +2,7 @@ extends CanvasLayer
 ## Autoload "Router": scene changes with a fade.
 ##
 ## REPLACING THE TEMPORARY MENU: point MAIN_MENU (below) and the project's
-## "run/main_scene" to the finished menu scene (e.g. res://GameMenu/MainMenu/main_menu.tscn).
+## "run/main_scene" to the finished menu scene.
 ## The finished menu only needs to call Router.go_to(Router.MISSION_SELECT),
 ## Router.go_to(Router.SETTINGS), Router.play() and get_tree().quit().
 
