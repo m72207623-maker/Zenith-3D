@@ -145,16 +145,14 @@ Godot --path . --resolution 2560x1080 --script res://Tools/adapt_test.gd -- outd
 
 **ZENITH Team - Project Creators**
 
-| | GitHub | Team | Confirmed contribution |
-|:-:|--------|------|------------------------|
-| <a href="https://github.com/m72207623-maker"><img src="https://github.com/m72207623-maker.png?size=64" width="48" alt="m72207623-maker"></a> | [@m72207623-maker](https://github.com/m72207623-maker) | ZENITH Team - Project Creators | Repository owner; development and integration of the 3D version, publishing |
-| <a href="https://github.com/Vd0v"><img src="https://github.com/Vd0v.png?size=64" width="48" alt="Vd0v"></a> | [@Vd0v](https://github.com/Vd0v) | ZENITH Team - Project Creators | - |
-| <a href="https://github.com/StrakFel"><img src="https://github.com/StrakFel.png?size=64" width="48" alt="StrakFel"></a> | [@StrakFel](https://github.com/StrakFel) | ZENITH Team - Project Creators | Original project setup and the first main-menu design (kept in the Git history) |
-| <a href="https://github.com/Danylos20"><img src="https://github.com/Danylos20.png?size=64" width="48" alt="Danylos20"></a> | [@Danylos20](https://github.com/Danylos20) | ZENITH Team - Project Creators | - |
-| <a href="https://github.com/teeb00"><img src="https://github.com/teeb00.png?size=64" width="48" alt="teeb00"></a> | [@teeb00](https://github.com/teeb00) | ZENITH Team - Project Creators | - |
-| <a href="https://github.com/Zhushman-Fedir"><img src="https://github.com/Zhushman-Fedir.png?size=64" width="48" alt="Zhushman-Fedir"></a> | [@Zhushman-Fedir](https://github.com/Zhushman-Fedir) | ZENITH Team - Project Creators | - |
-
-**Music:** both soundtrack tracks were composed and produced by **Danylo Seredniak**, a member of the ZENITH team.
+| | Name | GitHub | Role | Team |
+|:-:|------|--------|------|------|
+| <a href="https://github.com/Vd0v"><img src="https://github.com/Vd0v.png?size=64" width="48" alt="Vd0v"></a> | **Illia Vdovenko** | [@Vd0v](https://github.com/Vd0v) | Team Lead, Developer | ZENITH Team - Project Creators |
+| <a href="https://github.com/m72207623-maker"><img src="https://github.com/m72207623-maker.png?size=64" width="48" alt="m72207623-maker"></a> | **Myroslav Mazur** | [@m72207623-maker](https://github.com/m72207623-maker) | Developer | ZENITH Team - Project Creators |
+| <a href="https://github.com/StrakFel"><img src="https://github.com/StrakFel.png?size=64" width="48" alt="StrakFel"></a> | **Serhii Kovalchuk** | [@StrakFel](https://github.com/StrakFel) | Developer | ZENITH Team - Project Creators |
+| <a href="https://github.com/Zhushman-Fedir"><img src="https://github.com/Zhushman-Fedir.png?size=64" width="48" alt="Zhushman-Fedir"></a> | **Fedor Zhushman** | [@Zhushman-Fedir](https://github.com/Zhushman-Fedir) | Designer | ZENITH Team - Project Creators |
+| <a href="https://github.com/teeb00"><img src="https://github.com/teeb00.png?size=64" width="48" alt="teeb00"></a> | **Oleksandra Senina** | [@teeb00](https://github.com/teeb00) | Designer | ZENITH Team - Project Creators |
+| <a href="https://github.com/Danylos20"><img src="https://github.com/Danylos20.png?size=64" width="48" alt="Danylos20"></a> | **Danylo Seredniak** | [@Danylos20](https://github.com/Danylos20) | Composer, Music Producer - **Music composed and produced by Danylo Seredniak.** | ZENITH Team - Project Creators |
 
 The game concept, the story and the design of the missions come from the whole ZENITH team.
 Contributors are credited in the Git history through `Co-authored-by` trailers on the commits that contain their real work.
