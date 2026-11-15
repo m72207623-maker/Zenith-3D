@@ -6,7 +6,7 @@ extends CanvasLayer
 ## The finished menu only needs to call Router.go_to(Router.MISSION_SELECT),
 ## Router.go_to(Router.SETTINGS), Router.play() and get_tree().quit().
 
-const MAIN_MENU := "res://GameMenu/MainMenu/main_menu.tscn"      # the team menu (the old 3D temp menu stays in Menus/TempMenu)
+const MAIN_MENU := "res://Menus/TempMenu/temp_main_menu.tscn"
 const MISSION_SELECT := "res://Menus/TempMenu/mission_select.tscn"
 const SETTINGS := "res://Menus/TempMenu/settings.tscn"
 const NASA := "res://Menus/TempMenu/nasa_resources.tscn"

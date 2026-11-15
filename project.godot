@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Zenith"
-run/main_scene="uid://ley8a4pew3q4"
+run/main_scene="res://Menus/TempMenu/temp_main_menu.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

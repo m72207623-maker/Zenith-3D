@@ -179,10 +179,8 @@ func _run() -> void:
 	m = await _wait_scene("settings")
 	_check(current_scene.scene_file_path.contains("settings"), "CLICK Settings opens the settings screen")
 	await _click_text("BTN_BACK")
-	m = await _wait_scene("main_menu")
-	_check(current_scene.scene_file_path.contains("GameMenu/MainMenu/main_menu"), "CLICK Back returns to the team main menu")
-	_router.go_to("res://Menus/TempMenu/temp_main_menu.tscn")           # the old 3D menu is still kept and tested
 	m = await _wait_scene("temp_main_menu")
+	_check(current_scene.scene_file_path.contains("temp_main_menu"), "CLICK Back returns to the main menu")
 	await _click_text("MENU_MISSIONS")
 	m = await _wait_scene("mission_select")
 	_check(current_scene.scene_file_path.contains("mission_select"), "CLICK Missions opens the mission list (a different screen from Play)")
@@ -703,8 +701,8 @@ func _test_loss_retry() -> void:
 	await _key(KEY_ESCAPE)
 	await _frames(5)
 	await _click_text("BTN_MAIN_MENU")
-	await _wait_scene("main_menu")
-	_check(current_scene.scene_file_path.contains("GameMenu/MainMenu/main_menu") and not paused, "pause menu -> Main menu works and un-pauses")
+	await _wait_scene("temp_main_menu")
+	_check(current_scene.scene_file_path.contains("temp_main_menu") and not paused, "pause menu -> Main menu works and un-pauses")
 	# --- Mission 1 loss: no fuel
 	_router.go_to("res://Missions/Mission1/mission1.tscn")
 	m = await _wait_scene("mission1")
